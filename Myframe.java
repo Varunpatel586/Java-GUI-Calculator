@@ -75,7 +75,7 @@ public class Myframe extends JFrame{
                 double result = evaluate(input.toString());
                 display.setText(String.valueOf(result));
                 input.setLength(0);
-                input.append(result); // Allows chaining calculations
+                input.append(result); 
             } catch (Exception e) {
                 display.setText("Error");
                 input.setLength(0);
@@ -103,6 +103,7 @@ public class Myframe extends JFrame{
         }
 
         // Split numbers
+        
         double num1 = Double.parseDouble(input.substring(0, operatorIndex));
         double num2 = Double.parseDouble(input.substring(operatorIndex + 1));
 
